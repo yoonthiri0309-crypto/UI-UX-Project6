@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css"
+        integrity="sha512-t7Few9xlddEmgd3oKZQahkNI4dS6l80+eGEzFQiqtyVYdvcSG2D3Iub77R20BdotfRPA9caaRkg1tyaJiPmO0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container-fluid bg-primary">
+        <div class="container bg-white">
+
+            <div class="row flex-nowrap">
+                <div class="sidebar rounded-3 col-auto col-md-3 col-xl-2 px-sm-2 px-0 ">
+                    <div
+                        class="min-vh-100 d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+                        <a href="/"
+                            class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                            <span class="nav1 fs-5 d-none d-sm-inline text-dark">
+                                <i class="bi bi-play-fill text-primary fs-3"></i>
+                                Dashboard</span>
+                        </a>
+                        <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
+                            id="menu">
+                            <li>
+                                <a href="#" class="nav-link px-0 align-middle text-white">
+                                    <i class="bi bi-border-all text-primary"></i><span
+                                        class="ms-1 d-none d-sm-inline text-dark">Dashboard</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link px-0 align-middle text-white">
+                                    <i class="bi bi-arrow-repeat text-primary"></i> <span
+                                        class="ms-1 d-none d-sm-inline text-dark">Transaction</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link px-0 align-middle text-white active">
+                                    <i class="bi bi-file-earmark-medical-fill text-primary active"></i><span
+                                        class="ms-1 d-none d-sm-inline text-dark">Document</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link px-0 align-middle text-white">
+                                    <i class="bi bi-bag-dash text-primary"></i> <span
+                                        class="ms-1 d-none d-sm-inline text-dark">Store</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link px-0 align-middle text-white">
+                                    <i class="bi bi-bell text-primary"></i><span
+                                        class="ms-1 d-none d-sm-inline text-dark">Notification</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link px-0 align-middle text-white">
+                                    <i class="bi bi-person text-primary"></i> <span
+                                        class="ms-1 d-none d-sm-inline text-dark">Profile</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link px-0 align-middle text-white">
+                                    <i class="bi bi-gear text-primary"></i><span
+                                        class="ms-1 d-none d-sm-inline text-dark">Settings</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <hr>
+                        <div class="logout mt-auto pb-4 w-100">
+                            <a href="/"
+                                class="d-flex align-items-end pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                                <span class="fs-5 d-none d-sm-inline text-dark">
+                                    <i class="bi bi-box-arrow-right text-primary"></i>
+                                    Logout
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Main Content -->
+                <div class="main col-md-8 d-flex flex-column">
+                    <div class="container">
+                        <div class="input-group rounded-search mt-3">
+                            <span class="input-group-text bg-white border-end-0">
+                                <i class="bi bi-search text-muted"></i>
+                            </span>
+                            <input type="text" class="form-control border-start-0" placeholder="Search..."
+                                aria-label="Search">
+                        </div>
+                        <div class="col11 d-flex pt-4 pb-2">
+                            <div class="doc title fw-bold fs-3">
+                                My Files
+                            </div>
+                            <div class="title1">
+                                <button type="button" class="btn btn-primary"> + Add New</button>
+                            </div>
+                        </div>
+                        <div class="row gap-0">
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 ">
+                                <div class="card border-0">
+                                    <div class="img1 d-flex">
+                                        <div class="te">
+
+                                        </div>
+                                        <div class="icon d-flex gap-1">
+                                            <i class="bi bi-circle-fill text-secondary"></i>
+                                            <i class="bi bi-circle-fill text-secondary"></i>
+                                            <i class="bi bi-circle-fill text-secondary"></i>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="doc card-title pt-1 pb-3">Google Drive</h5>
+                                        <div class="progress" role="progressbar" aria-label="Basic example"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                            <div class="progress-bar" style="width: 50%"></div>
+                                        </div>
+                                        <div class="tex1">
+                                            <span class="text-secondary">2,192 files</span>
+                                            <span class="text-dark">2.9GB</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                                <div class="card border-0">
+                                    <div class="img1 d-flex">
+                                        <div class="te">
+
+                                        </div>
+                                        <div class="icon d-flex gap-1">
+                                            <i class="bi bi-circle-fill text-secondary"></i>
+                                            <i class="bi bi-circle-fill text-secondary"></i>
+                                            <i class="bi bi-circle-fill text-secondary"></i>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="doc card-title pt-1 pb-3">Dropbox</h5>
+                                        <div class="progress" role="progressbar" aria-label="Basic example"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                            <div class="progress-bar bg-danger" style="width: 30%"></div>
+                                        </div>
+                                        <div class="tex1">
+                                            <span class="text-secondary">458 files</span>
+                                            <span class="text-dark">1.1GB</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                                <div class="card border-0">
+                                    <div class="img1 d-flex">
+                                        <div class="te">
+
+                                        </div>
+                                        <div class="icon d-flex gap-1">
+                                            <i class="bi bi-circle-fill text-secondary"></i>
+                                            <i class="bi bi-circle-fill text-secondary"></i>
+                                            <i class="bi bi-circle-fill text-secondary"></i>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="doc card-title pt-1 pb-3">One Drive</h5>
+                                        <div class="progress" role="progressbar" aria-label="Basic example"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                            <div class="progress-bar bg-success" style="width: 50%"></div>
+                                        </div>
+                                        <div class="tex1">
+                                            <span class="text-secondary">1,234 files</span>
+                                            <span class="text-dark">1.6GB</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row pt-4">
+                            <div class="second col-md-7 col-sm-12 mb-4">
+                                <div class="card border-0 shadow-sm rounded-4 p-4 h-100">
+
+                                    <div class="d-flex justify-content-between align-items-center mb-4">
+                                        <h5 class="doc fw-bold mb-0">Recent Order</h5>
+                                        <a href="#" class="text-decoration-none text-muted small fw-medium">See All</a>
+                                    </div>
+
+
+                                    <div class="table-responsive">
+                                        <table class="table table-borderless align-middle">
+                                            <thead>
+                                                <tr class="text-secondary small border-bottom">
+                                                    <th scope="col" class="ps-0 py-3">
+                                                        <div class="dropdown">
+                                                            <button
+                                                                class="btn btn-sm dropdown-toggle text-secondary p-0 border-0 shadow-none fw-normal"
+                                                                type="button" data-bs-toggle="dropdown">
+                                                                File Name
+                                                            </button>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item" href="#">Sort A-Z</a></li>
+                                                                <li><a class="dropdown-item" href="#">Sort Z-A</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </th>
+                                                    <th scope="col" class="py-3">
+                                                        <div class="dropdown">
+                                                            <button
+                                                                class="btn btn-sm dropdown-toggle text-secondary p-0 border-0 shadow-none fw-normal"
+                                                                type="button" data-bs-toggle="dropdown">
+                                                                Date
+                                                            </button>
+                                                            <ul class="dropdown-menu">
+                                                                <li>
+                                                                    <a class="dropdown-item" href="#">Newest First</a>
+                                                                    <a class="dropdown-item" href="#">Newest Last</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </th>
+                                                    <th scope="col" class="text-end pe-0 py-3">
+                                                        <div class="dropdown d-inline-block">
+                                                            <button
+                                                                class="btn btn-sm dropdown-toggle text-secondary p-0 border-0 shadow-none fw-normal"
+                                                                type="button" data-bs-toggle="dropdown">
+                                                                Size
+                                                            </button>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item" href="#">Largest First</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <!-- Row 1: Sketch File -->
+                                                <tr>
+                                                    <td class="tab ps-0 py-3">
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="bg-light rounded-3 p-2 me-3 d-flex align-items-center justify-content-center"
+                                                                style="width: 40px; height: 40px;">
+                                                                <i class="bi text-primary fs-5"></i>
+                                                            </div>
+                                                            <span class="fw-semibold text-dark">Sketch
+                                                                File</span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="doc text-muted fw-medium">27.03.2021</td>
+                                                    <td class="doc text-end pe-0 fw-bold text-dark">19mb</td>
+                                                </tr>
+
+                                                <!-- Row 2: Document File (Active Style) -->
+                                                <tr>
+                                                    <td class="tab ps-0 py-3">
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="bg-light rounded-3 p-2 me-3 d-flex align-items-center justify-content-center"
+                                                                style="width: 40px; height: 40px;">
+                                                                <i class="bi text-primary fs-5"></i>
+                                                            </div>
+                                                            <span class="fw-semibold text-dark">Figma File</span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="doc text-muted fw-medium">12.04.2021</td>
+                                                    <td class="doc text-end pe-0 fw-bold text-dark">22mb</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="tab ps-0 py-3">
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="bg-light rounded-3 p-2 me-3 d-flex align-items-center justify-content-center"
+                                                                style="width: 40px; height: 40px;">
+                                                                <i class="bi text-primary fs-5"></i>
+                                                            </div>
+                                                            <span class="fw-semibold text-dark">Figma File</span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="doc text-muted fw-medium">12.04.2021</td>
+                                                    <td class="doc text-end pe-0 fw-bold text-dark">22mb</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="tab ps-0 py-3">
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="bg-light rounded-3 p-2 me-3 d-flex align-items-center justify-content-center"
+                                                                style="width: 40px; height: 40px;">
+                                                                <i class="bi bi-file-earmark-fill text-primary"></i>
+                                                            </div>
+                                                            <span class="fw-semibold text-dark">Figma File</span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="doc text-muted fw-medium">12.04.2021</td>
+                                                    <td class="doc text-end pe-0 fw-bold text-dark">22mb</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="tab ps-0 py-3">
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="bg-light rounded-3 p-2 me-3 d-flex align-items-center justify-content-center"
+                                                                style="width: 40px; height: 40px;">
+                                                                <i class="bi bi-volume-up-fill text-primary"></i>
+                                                            </div>
+                                                            <span class="fw-semibold text-dark">Figma File</span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="doc text-muted fw-medium">12.04.2021</td>
+                                                    <td class="doc text-end pe-0 fw-bold text-dark">22mb</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="tab ps-0 py-3">
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="bg-light rounded-3 p-2 me-3 d-flex align-items-center justify-content-center"
+                                                                style="width: 40px; height: 40px;">
+                                                                <i
+                                                                    class="bi bi-arrow-right-square-fill text-primary"></i>
+                                                            </div>
+                                                            <span class="fw-semibold text-dark">Figma File</span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="doc text-muted fw-medium">12.04.2021</td>
+                                                    <td class="doc text-end pe-0 fw-bold text-dark">22mb</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="tab ps-0 py-3">
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="bg-light rounded-3 p-2 me-3 d-flex align-items-center justify-content-center"
+                                                                style="width: 40px; height: 40px;">
+                                                                <i
+                                                                    class="bi bi-file-earmark-excel-fill text-primary"></i>
+                                                            </div>
+                                                            <span class="fw-semibold text-dark">Figma File</span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="doc text-muted fw-medium">12.04.2021</td>
+                                                    <td class="doc text-end pe-0 fw-bold text-dark">22mb</td>
+                                                </tr>
+
+                                                <!-- Repeat other rows as needed -->
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 mb-4 col-sm-12">
+                                <div class="card border-0 shadow-sm rounded-4 p-4 h-100">
+                                    <div class="d-flex justify-content-between align-items-center mb-4">
+                                        <h5 class="doc fw-bold mb-0">Analytics</h5>
+                                        <div class="icon d-flex gap-1">
+                                            <i class="bi bi-circle-fill text-secondary"></i>
+                                            <i class="bi bi-circle-fill text-secondary"></i>
+                                            <i class="bi bi-circle-fill text-secondary"></i>
+                                        </div>
+                                    </div>
+
+                                    <div class="table-responsive">
+                                        <img src="img/chart.png" class="img-fluid w-100" alt="Chart">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="right col bg-white">
+                    <div class="head d-flex">
+                        <div class="icon">
+                            <i class="bi bi-bell"></i>
+                        </div>
+                        <div class="d-flex align-items-center gap-3">
+
+                            <div class="im">
+
+                            </div>
+
+                            <div class="tee d-flex flex-column justify-content-center">
+                                <h6 class="tex fw-bold text-dark">Fletch Skinner</h6>
+                                <small class="text-secondary">ID 1234567890</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="h5 fw-bold pt-4 storage-title">Storage Details</div>
+                    <div class="imgg">
+                        <img src="img/ch.png" class="img-fluid w-100" alt="Chart">
+                    </div>
+                    <div class="bottom">
+                        <div class="row">
+                            <div class="col pt-4">
+                                <div class="card border-1 shadow-sm rounded-4 p-3">
+                                    <div class="d-flex align-items-center">
+                                        <div
+                                            class="icon1 rounded-3 p-2 me-3 d-flex align-items-center justify-content-center">
+                                            <i class="bi bi-file-earmark-medical-fill text-primary"></i>
+
+                                        </div>
+
+                                        <div class="ms-3">
+                                            <h6 class="doc mb-0 fw-bold text-dark">Document Files</h6>
+                                            <small class="doc text-muted">1,256 Files</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col pt-2">
+                                <div class="card border-1 shadow-sm rounded-4 p-3">
+                                    <div class="d-flex align-items-center">
+                                        <div
+                                            class="icon2 rounded-3 p-2 me-3 d-flex align-items-center justify-content-center">
+                                            <i class="bi bi-caret-right-fill"></i>
+
+                                        </div>
+
+                                        <div class="ms-3">
+                                            <h6 class="doc mb-0 fw-bold text-dark">Media Files</h6>
+                                            <small class="doc text-muted">1,122 Files</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col pt-2">
+                                <div class="card border-1 shadow-sm rounded-4 p-3">
+                                    <div class="d-flex align-items-center">
+                                        <div
+                                            class="icon3 rounded-3 p-2 me-3 d-flex align-items-center justify-content-center">
+                                            <i class="bi bi-file-earmark-excel-fill text-danger"></i>
+
+                                        </div>
+
+                                        <div class="ms-3">
+                                            <h6 class="doc mb-0 fw-bold text-dark">Excel Files</h6>
+                                            <small class="doc text-muted">1,368 Files</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col pt-2">
+                                <div class="card border-1 shadow-sm rounded-4 p-3">
+                                    <div class="d-flex align-items-center">
+                                        <div
+                                            class="icon4 rounded-3 p-2 me-3 d-flex align-items-center justify-content-center">
+                                            <i class="bi bi-volume-up-fill text-success"></i>
+
+                                        </div>
+
+                                        <div class="ms-3">
+                                            <h6 class="doc mb-0 fw-bold text-dark">
+                                                Sound Files
+                                            </h6>
+                                            <small class="doc text-muted">1,435 Files</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col pt-2">
+                                <div class="card border-1 shadow-sm rounded-4 p-3">
+                                    <div class="d-flex align-items-center">
+                                        <div
+                                            class="icon5 rounded-3 p-2 me-3 d-flex align-items-center justify-content-center">
+                                            <i class="bi bi-file-earmark-fill text-warning"></i>
+
+                                        </div>
+
+                                        <div class="ms-3">
+                                            <h6 class="doc mb-0 fw-bold text-dark">Word Files</h6>
+                                            <small class="doc text-muted">1,375 Files</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
